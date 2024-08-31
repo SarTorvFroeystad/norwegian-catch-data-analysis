@@ -17,6 +17,7 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 - matplotlib
 - seaborn
 - numpy
+- SciPy
 
 ## Analysis Workflow
 
