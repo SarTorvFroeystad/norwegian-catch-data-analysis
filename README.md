@@ -6,16 +6,9 @@ This repository contains an exploratory data analysis (EDA) of Norwegian "Catch 
 
 ## Data Source
 
-The data used in this project is sourced from the Norwegian Directorate of Fisheries (Fiskeridirektoratet). The datasets are licensed under the Norwegian License for Public Data (NLOD).
+The data used in this project is sourced from the Norwegian Directorate of Fisheries (Fiskeridirektoratet), and involves the complete 'catch data' (Fangstdata) from the years 2020 - 2024. The datasets are licensed under the Norwegian License for Public Data (NLOD).
 
 - **Source:** [Fiskeridirektoratet](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
-
-## Project Structure
-
-- **data/**: Directory containing the raw datasets from 2020 to 2024.
-- **notebooks/**: Jupyter notebooks used for analysis.
-- **scripts/**: Python scripts used for data processing and analysis.
-- **README.md**: This file providing an overview of the project.
 
 ## Libraries Used
 
@@ -33,13 +26,13 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 ### 2. **Data Cleaning**
    - **Duplicate Removal**: Duplicates were identified and removed.
    - **Whitespace Trimming**: Whitespace was trimmed from string columns.
-   - **Type Conversion**: Key columns such as `Fangstverdi` (Total Revenue) and `Rundvekt` (Total Weight) were converted from strings to numerical types.
+   - **Type Conversion**: Key columns such as `Fangstverdi` (Total Revenue) and `Rundvekt` (Total Weight) were converted from strings to numerical/double types.
    - **Handling Null Values**: Columns with significant null values were either cleaned or dropped based on relevance to the analysis.
 
 ### 3. **Exploratory Data Analysis**
    - **Data Exploration**: Initial exploration involved checking distinct values for key columns, such as fishing equipment (`Redskap`) and species of fish (`Art FAO`).
    - **Column Selection**: Relevant columns were selected for further analysis, focusing on vessel information, catch data, and economic metrics.
-   - **Municipality Focus**: The analysis was particularly focused on vessels registered in Herøy kommune, investigating their activity and catch patterns.
+   - **Municipality Focus on Herøy kommune**: The analysis was particularly focused on vessels registered in Herøy kommune, investigating their activity and catch patterns.
 
 ### 4. **Data Analysis Questions**
    - **Area-Based Analysis**: Which areas (`Hovedområde`) see the most fishing activity?
@@ -55,3 +48,11 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 - The dataset contains **4,932,203 rows and 133 columns** after combining and cleaning the data from 2020 to 2024.
 - A total of **133 unique fish species** were identified, with specific focus on high-value species and their corresponding catch volumes.
 - The analysis highlights significant regional and temporal variations in fishing activity and revenue.
+
+## Insights & Future prospects Regarding Libraries and Project Structure
+- In order to save files for this project I was limited by the amount of data pandas could handle, as PySpark DataFrames had to be converted to pandas DataFrames. 
+   
+   - PySpark requires a HADOOP installation, which can be quite tedious to set up for a simple home-based project.
+
+- I would have instead used Polars & Dask, in combination with pandas, to handle the data for this project. This would allow to save DataFrames more easily.
+- For this specific project, a lot of the data was filtered on a scale that pandas could handle, so it worked out well. However, for future projects where I want to save more files earlier on in the process prior to filtering and selecting, I will go with Dask.
