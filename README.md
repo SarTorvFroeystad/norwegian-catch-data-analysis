@@ -55,7 +55,9 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 - A total of **133 unique fish species** were identified, with specific focus on high-value species and their corresponding catch volumes.
 - The analysis highlights significant regional and temporal variations in fishing activity and revenue.
 
-## Insights & Future prospects Regarding Libraries and Project Structure
+
+
+## Future Prospects Regarding Libraries and Project Structure
 - In order to save files for this project I was limited by the amount of data pandas could handle, as PySpark DataFrames had to be converted to pandas DataFrames. 
    
    - PySpark requires a HADOOP installation, which can be quite tedious to set up for a simple home-based project.
