@@ -41,10 +41,12 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
    - **Revenue & Weight Correlation**: Examining the relationship between the amount of fish caught and the revenue generated.
    - **Fish Species Analysis**: Identifying which vessels catch the most of each species and analyzing price variations.
 
-### 5. **Vessel Information Table**
-   - A comprehensive table of vessel information was created, detailing attributes such as vessel type, build year, engine power, and the fishing equipment used.
 
 ## Key Findings
+
+
+!(total round weight top 20 vessels.png)
+
 
 - The dataset contains **4,932,203 rows and 133 columns** after combining and cleaning the data from 2020 to 2024.
 - A total of **133 unique fish species** were identified, with specific focus on high-value species and their corresponding catch volumes.
