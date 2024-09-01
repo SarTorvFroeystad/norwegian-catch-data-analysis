@@ -10,6 +10,8 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 
 - **Source:** [Fiskeridirektoratet](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
 
+!(total round weight top 20 vessels.png)
+
 ## Libraries Used
 
 - PySpark
@@ -18,6 +20,8 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 - seaborn
 - numpy
 - SciPy
+
+
 
 ## Analysis Workflow
 
@@ -42,11 +46,8 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
    - **Fish Species Analysis**: Identifying which vessels catch the most of each species and analyzing price variations.
 
 
+
 ## Key Findings
-
-
-!(total round weight top 20 vessels.png)
-
 
 - The dataset contains **4,932,203 rows and 133 columns** after combining and cleaning the data from 2020 to 2024.
 - A total of **133 unique fish species** were identified, with specific focus on high-value species and their corresponding catch volumes.
