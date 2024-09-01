@@ -10,7 +10,9 @@ The data used in this project is sourced from the Norwegian Directorate of Fishe
 
 - **Source:** [Fiskeridirektoratet](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
 
-!(total round weight top 20 vessels.png)
+
+
+![Total round weight](https://github.com/SarTorvFroeystad/norwegian-catch-data-analysis/blob/main/total%20round%20weight%20top%2020%20vessels.png)
 
 ## Libraries Used
 
